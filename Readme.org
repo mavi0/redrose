@@ -1,0 +1,3 @@
+#+title: Redrose Beamer-org Theme
+
+This is the theme I use for power-points whilst teaching as a TA/Society/
