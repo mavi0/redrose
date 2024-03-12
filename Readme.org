@@ -2,7 +2,7 @@
 
 This is a beamer-org theme I use for power-points whilst teaching as a TA/Society/AL at the University of Lancaster.
 
-* TODO list
+* TODO LIST HERE
 - [ ] Implement Coding Lsp integration
 - [ ] Implement Control Theory Diagrams
 - [ ] Implement UML diagrams
