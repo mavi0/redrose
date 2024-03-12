@@ -1,3 +1,9 @@
-#+title: Redrose Beamer-org Theme
+#+title: Redrose
 
-This is the theme I use for power-points whilst teaching as a TA/Society/
+This is a beamer-org theme I use for power-points whilst teaching as a TA/Society/AL at the University of Lancaster.
+
+* How to use
+Clone this repo into your beamer file, and you can probably figure out the rest. If anyone else ever uses this I'll probably write a nicer How to for it.
+
+* Usecase
+This is use-case targeted for teaching computer science. Mathematicians are welcome to use it. But I don't plan on explicitly supporting this style of usage, so please don't open PR about these sort of issues.
