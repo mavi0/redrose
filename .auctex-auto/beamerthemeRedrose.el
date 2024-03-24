@@ -6,11 +6,13 @@
     "color"
     "tikz")
    (TeX-add-symbols
+    '("acknowledge" 1)
     '("role" 1)
     '("module" 1)
     "RedroseVersion"
     "Module"
-    "Role")
+    "Role"
+    "Acknowledgement")
    (LaTeX-add-xcolor-definecolors
     "red"
     "grey"

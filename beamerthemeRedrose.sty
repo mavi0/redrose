@@ -17,7 +17,6 @@
 \DeclareOption{infolab}{\@doInfolabtrue}
 \ProcessOptions
 
-
 \def\RedroseVersion{0.1} % Current Working Version
 \def\Module{Unknown}
 \def\Role{SCC.\Module, Lecturer}
@@ -27,6 +26,10 @@
 }
 \newcommand\role[1]{%
   \def\Role{#1}
+}
+
+\newcommand\acknowledge[1]{%
+  \def\Acknowledgement{#1}
 }
 
 \definecolor{red}{RGB}{180,17,27}

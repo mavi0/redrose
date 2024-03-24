@@ -38,12 +38,16 @@
 
         \makebox[3cm]{\rule{0.25\paperwidth}{0.1pt}}\hfill
 
-
-
-        \hfill\today
+        \hfill \today
+        \hspace{2cm}
+        \tiny{
+        \ifdefined\Acknowledgement{
+            Acknowledgements:
+            \Acknowledgement
+          }
+        \fi
+        }
       };
-
-
       \node[anchor=south east,inner sep=0] at (0.9\paperwidth,0.2) {\includegraphics[width=0.6\textwidth]{img/scc_logo.png}};
     \fi
    \ifnum\thepage>1\relax
