@@ -7,6 +7,7 @@
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
     
     \ifnum\thepage=1
+      \node[anchor=south east,inner sep=0] at (0.865\paperwidth,1.2) {\includegraphics[height=0.5\paperheight]{img/coat_of_arms.png}};
       \if@doInfolab
         \node[anchor=south west,inner sep=0] at (3,0) {\includegraphics[height=1.1\paperheight]{img/scc_campus_orth.png}};
       \fi
@@ -50,7 +51,7 @@
         }
       };
       \node[anchor=south east,inner sep=0] at (0.9\paperwidth,0.2) {\includegraphics[width=0.6\textwidth]{img/scc_logo.png}};
-      \node[anchor=south east,inner sep=0] at (0.9\paperwidth,2) {\includegraphics[height=0.5\paperheight]{img/coat_of_arms.png}};
+
     \fi
    \ifnum\thepage>1\relax
    \fill[grey,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
