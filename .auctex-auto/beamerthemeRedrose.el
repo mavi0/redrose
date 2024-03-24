@@ -4,7 +4,8 @@
    (TeX-run-style-hooks
     "frames/titlepage"
     "color"
-    "tikz")
+    "tikz"
+    "graphicx")
    (TeX-add-symbols
     '("acknowledge" 1)
     '("role" 1)
