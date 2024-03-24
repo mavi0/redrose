@@ -4,13 +4,41 @@
 % swarbrick.eu.org
 
 \ProvidesPackage{beamerthemeRedrose}[\today]
+\usepackage{color}
+
+\newif\if@doEnglish
+\@doEnglishfalse
+\DeclareOption{en}{\@doEnglishtrue}
+\ProcessOptions
+
 
 \def\RedroseVersion{0.1} % Current Working Version
+\def\Module{Unknown}
+
+% Sets what the current Module is so that this is displayed instead of being blank
+\newcommand\module[1]{%
+  \def\Module{#1}
+}
+
+\definecolor{red}{RGB}{177,18,27}
+\definecolor{grey}{RGB}{192,192,192}
+
+\setbeamercolor{titlelike}{parent=structure,bg=red,fg=white}
+
+\setbeamercolor{title text}{fg=black}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{copyright in head/foot}{fg=grey}
+\setbeamercolor{framenumber in head/foot}{fg=grey}
+
 
 % Colours Declared Here, if you want to change them please do so
-% primary - Primary Colour
-% secondary - Secondary Colour
-% tertiary - Tertiary Colour
+
+
+
+
+\addtobeamertemplate{title page}{%
+  \pagecolor{red}
+}
 
 % TODO implement Colour Displays
 
