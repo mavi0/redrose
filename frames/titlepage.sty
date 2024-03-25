@@ -7,7 +7,13 @@
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
     
     \ifnum\thepage=1
-      \node[anchor=south east,inner sep=0] at (0.862\paperwidth,1.2) {\includegraphics[height=0.5\paperheight]{img/coat_of_arms.png}};
+      \node[grey,anchor=south east,inner sep=0] at (0.862\paperwidth,1.35) {\centering
+        \includegraphics[height=0.5\paperheight]{img/coat_of_arms.png}
+      };
+      \node[darkgrey,anchor=south east,inner sep=0] at (0.75\paperwidth,1.5) {\centering
+        \tiny{\emph{Truth lies open to all}}
+      };
+
       \if@doInfolab
         \node[anchor=south west,inner sep=0] at (3,0) {\includegraphics[height=1.1\paperheight]{img/scc_campus_orth.png}};
       \fi
