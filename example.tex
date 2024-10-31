@@ -141,8 +141,29 @@
     \end{tikzpicture}
   \end{frame}
 	\subsection{Toy Example}
-  \begin{frame}{Toy Example}{Alice, Bob, Charlie, Dave}
+  \begin{frame}[t]{Toy Example}{Alice, Bob, Charlie, Dave}
+    \vspace{.1cm}
+    \begin{tabular}{|c|c|}
+      \hline
+      Client & Servicing Nodes \\
+      \hline
+      A & $\Sigma_{1},S_{x}$ \\
+      B & $\Sigma_{4},S_{x},S_{y}$\\
+      C & $\Sigma_{6},S_{y},S_{z}$\\
+      D & $\Sigma_{5},S_{x},S_{y},S_{z}$\\
+      \hline
+    \end{tabular}
+    \pause
+    \begin{theorem}
+      assume that if the set is  an itemised set of objects.
+      \[\Sigma_{n} \to \emptyset \]
 
+      Discard $\Sigma_{n}$ as remainder Over large number of nodes.
+      \[ A = {S_{x}}, B = {S_{x},S_{y}} \cdots\]
+      \pause
+
+      How to Assess if $\Sigma_{n}$ is just artefact or truly unique? No idea.
+    \end{theorem}
   \end{frame}
 	\subsection{}
   \section{Demo Implementation}
