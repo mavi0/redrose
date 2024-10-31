@@ -9,10 +9,14 @@
 \headcommand {\beamer@framepages {2}{6}}
 \headcommand {\beamer@subsectionpages {2}{6}}
 \headcommand {\beamer@subsectionentry {0}{1}{2}{7}{Dynamic Objects}}
-\headcommand {\slideentry {1}{2}{1}{7/7}{Dynamic Objects}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@partpages {1}{7}}
-\headcommand {\beamer@subsectionpages {8}{7}}
-\headcommand {\beamer@sectionpages {8}{7}}
-\headcommand {\beamer@documentpages {7}}
-\headcommand {\gdef \inserttotalframenumber {3}}
+\headcommand {\slideentry {1}{2}{1}{7/8}{Dynamic Objects}{0}}
+\headcommand {\beamer@framepages {7}{8}}
+\headcommand {\slideentry {1}{2}{2}{9/9}{Dynamic Objects}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {1}{2}{3}{10/19}{Dynamic Objects}{0}}
+\headcommand {\beamer@framepages {10}{19}}
+\headcommand {\beamer@partpages {1}{19}}
+\headcommand {\beamer@subsectionpages {20}{19}}
+\headcommand {\beamer@sectionpages {20}{19}}
+\headcommand {\beamer@documentpages {19}}
+\headcommand {\gdef \inserttotalframenumber {5}}
