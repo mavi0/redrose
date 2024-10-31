@@ -1,3 +1,4 @@
+
 \documentclass{beamer}
 
 % Options are:
@@ -6,25 +7,63 @@
 % de - Standard German
 % cy - Welsh
 \usetheme{Redrose}
-\module{000} % need to add this
-\role{Senior Boffin}
+
+
+\module{NRG.AI4ME} % need to add this
+\role{PhD Candidate}
+\email{t.swarbrick}
 % Need to reference a Collegue?
-% \acknowledge{Sam}
-\title{Introduction to \LaTeX}
-\author{Prof. John Doe}
+\acknowledge{ Dr Haris Rotsos, Prof Nick Race}
+\title{Self-optimising distributed coding nodes}
+\author{Thomas Swarbrick}
 
 \begin{document}
 \maketitle
-\begin{frame}{test}
-	\section{An Introduction to the topic}
-	\section{Some More advanced Stuff}
-	\subsection{A subsection}
-	\subsection{Another subsection}
-	\subsection{A really Important Formula}
+\section{Object Based Media}
+\subsection{Traditional}
+\begin{frame}[t]{Object Based Media}{A Static Approach to Objects}
+  \begin{alertblock}{What is an object in object based media?}
+    \begin{itemize}
+\item Customisation of Characteristic, but the meta characteristics remain constant.
+      \item Large customisable overlap, but not computationally feasible on the client-side.
+    \end{itemize}
+
+  \end{alertblock}
+  \pause
+  \begin{exampleblock}{Traditional Approach}
+    \begin{itemize}
+\item Changeable Tee shirt colour
+\item Geographically Specific Weather Map
+    \end{itemize}
+
+  \end{exampleblock}
+  \pause
+  But..
+  \pause
+    \begin{itemize}
+\item Fixed in scope
+      \item Susceptible to compute cost constraints.
+    \end{itemize}
+    \pause
+
+\end{frame}
+  \subsection{Dynamic Objects}
+  \begin{frame}[t]{Object Based Media}{Encoder streams as Objects}
+    Bring the Object Based Media (OBM) principle lower down the tool-chain.
+
+    Identifying Overlap between source coding between video streams,
+
+    Using the principle of \emph{Distributed Source Coding} from information theory to split a single encoder stream.
+
+  \end{frame}
+
+  \section{High Level Overview}
+	\subsection{Toy Example}
+	\subsection{}
+  \section{Demo Implementation}
+  \subsection{CommandLists}
 	\section{Additional Reading}
 	\subsection{A recommended reading list}
-	\section{Notes}
-	\subsection{Facts to bear in mind}
 	\section{References}
-\end{frame}
+
 \end{document}

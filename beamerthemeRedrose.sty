@@ -5,9 +5,11 @@
 
 \ProvidesPackage{beamerthemeRedrose}[\today]
 \usepackage{color}
+
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
 
 \newif\if@doEnglish
 \@doEnglishfalse
@@ -27,6 +29,9 @@
 }
 \newcommand\role[1]{%
   \def\Role{#1}
+}
+\newcommand\email[1]{%
+  \def\Email{#1}
 }
 
 \newcommand\acknowledge[1]{%

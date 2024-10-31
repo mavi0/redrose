@@ -1,21 +1,44 @@
 % This is the title page
 \setbeamercolor{section in toc}{fg=white}
 \setbeamercolor{subsection in toc}{fg=grey}
+\setbeamercolor{frametitle}{fg=white}
+
+
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.7ex,dp=0.6ex]{frametitle}
+
+
+      {\large \hspace{.1cm} \insertframetitle }
+      \vspace{-.4cm}
+
+      {\tiny  \hspace{.2cm} \insertframesubtitle}%
+
+
+    \end{beamercolorbox}%
+}
+\setbeamertemplate{background}{
+  \ifnum\thepage>1\relax
+    \begin{tikzpicture}
+      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+      \fill[darkgrey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.8875\paperheight) -- (-1,.8875\paperheight);
+      \fill[grey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.915\paperheight) -- (-1,.915\paperheight);
+      \fill[red,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.925\paperheight) -- (-1,.925\paperheight);
+      \node[white, anchor=south west] at (.725\paperwidth,0){\includegraphics[width=0.3\textwidth]{img/scc_logo.png}};
+      %\node[white, anchor=south west] at (0,.876\paperheight){\hfill{\tiny SCC.\Module: \inserttitle}};
+      \node[opacity=.05,anchor=south east] at (0.55\paperwidth,.06\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
+    \end{tikzpicture}
+  \fi
+}
 \setbeamertemplate{title page}{
   \begin{tikzpicture}
 
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-    
+    \node[white, anchor=north west] at (.647\paperwidth,.0715\textwidth){\includegraphics[width=0.3\textwidth]{img/scc_logo.png}};
+    \node[opacity=.05,anchor=south west] at (0.45\paperwidth,.06\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
     \ifnum\thepage=1
-
-
-
-      \if@doInfolab
-        \node[anchor=south west,inner sep=0] at (3,0) {\includegraphics[height=1.1\paperheight]{img/scc_campus_orth.png}};
-      \fi
-      \node[anchor=south west,inner sep=0] at (5.2,0.2) {\includegraphics[width=0.6\textwidth]{img/scc_logo.png}};
             \node[grey,anchor=south west,inner sep=0] at (6.1,1.3) {\centering
-        \includegraphics[height=0.5\paperheight]{img/coat_of_arms.png}
+
       };
       \fill[darkgrey,opacity=1] (-1,0) -- (4.1,0) -- (8.1,1.1\paperheight) -- (-1,1.1\paperheight);
       \fill[grey,opacity=1] (-1,0) -- (3.8,0) -- (7.8,1.1\paperheight) -- (-1,1.1\paperheight);
@@ -28,7 +51,7 @@
       };
 
       \node[white,anchor=south west, inner sep=0, text width = 5cm] at (-.5,0.5){%
-        \tiny{Overview of Today's Lecture
+        \tiny{Overview of Today's Presentation
           \makebox[4cm]{\rule{0.33\paperwidth}{0.1pt}}\hfill
           \vspace{0.2cm}
           \tableofcontents
@@ -43,21 +66,28 @@
 
         \hfill \Role
 
+        \hfill {\tiny{\Email}{@lancaster.ac.uk}}
+
         \makebox[3cm]{\rule{0.25\paperwidth}{0.1pt}}\hfill
 
         \hfill \today
-        \hspace{2cm}
+
         \tiny{
-        \ifdefined\Acknowledgement{
-            Acknowledgements:
-            \Acknowledgement
+          \ifdefined\Acknowledgement{
+              \makebox[3cm]{\rule{0.25\paperwidth}{0.1pt}}\hfill
+
+              \hfill Acknowledgements
+
+
+              \hfill\scalebox{.5}{\Acknowledgement}
+
           }
         \fi
         }
       };
     \fi
-   \ifnum\thepage>1\relax
-   \fill[grey,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+    \ifnum\thepage>1\relax
+
    \fi
   \end{tikzpicture}
 }
