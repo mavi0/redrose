@@ -2,4 +2,5 @@
 \beamer@subsectionintoc {1}{1}{Traditional}{2}{0}{1}
 \beamer@subsectionintoc {1}{2}{Dynamic Objects}{7}{0}{1}
 \beamer@sectionintoc {2}{High Level Overview}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{Toy Example}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{Worked Example}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Toy Example}{21}{0}{2}

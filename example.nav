@@ -16,11 +16,13 @@
 \headcommand {\beamer@sectionpages {2}{9}}
 \headcommand {\beamer@subsectionpages {7}{9}}
 \headcommand {\sectionentry {2}{High Level Overview}{10}{High Level Overview}{0}}
-\headcommand {\slideentry {2}{0}{1}{10/20}{}{0}}
+\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{10}{Worked Example}}
+\headcommand {\slideentry {2}{1}{1}{10/20}{Worked Example}{0}}
 \headcommand {\beamer@framepages {10}{20}}
 \headcommand {\beamer@subsectionpages {10}{20}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{21}{Toy Example}}
-\headcommand {\slideentry {2}{1}{1}{21/23}{Toy Example}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{21}{Toy Example}}
+\headcommand {\slideentry {2}{2}{1}{21/23}{Toy Example}{0}}
 \headcommand {\beamer@framepages {21}{23}}
 \headcommand {\beamer@partpages {1}{23}}
 \headcommand {\beamer@subsectionpages {24}{23}}
