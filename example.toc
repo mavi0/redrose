@@ -1,6 +1,15 @@
 \beamer@sectionintoc {1}{Object Based Media}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Traditional}{2}{0}{1}
 \beamer@subsectionintoc {1}{2}{Dynamic Objects}{7}{0}{1}
-\beamer@sectionintoc {2}{High Level Overview}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{Worked Example}{10}{0}{2}
-\beamer@subsectionintoc {2}{2}{Toy Example}{21}{0}{2}
+\beamer@sectionintoc {2}{High Level Overview}{15}{0}{2}
+\beamer@subsectionintoc {2}{1}{Worked Example}{15}{0}{2}
+\beamer@subsectionintoc {2}{2}{Toy Example}{26}{0}{2}
+\beamer@subsectionintoc {2}{3}{Node Distribution }{29}{0}{2}
+\beamer@sectionintoc {3}{Testing the hypotheses}{32}{0}{3}
+\beamer@subsectionintoc {3}{1}{Generation of Objects/Cross-correlation}{32}{0}{3}
+\beamer@subsectionintoc {3}{2}{Optimisation of Objects }{33}{0}{3}
+\beamer@subsectionintoc {3}{3}{Network Distribution}{34}{0}{3}
+\beamer@subsectionintoc {3}{4}{Encoding/Decoding Weights}{35}{0}{3}
+\beamer@subsectionintoc {3}{5}{Objects as Code (OaC)}{36}{0}{3}
+\beamer@sectionintoc {4}{Any Questions}{37}{0}{4}
+\beamer@sectionintoc {5}{References/Inspiration}{37}{0}{5}

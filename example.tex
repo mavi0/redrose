@@ -13,7 +13,7 @@
 \role{PhD Candidate}
 \email{t.swarbrick}
 % Need to reference a Collegue?
-\acknowledge{ Dr Haris Rotsos, Prof Nick Race}
+\acknowledge{ Supervisors: Dr Haris Rotsos, Prof Nick Race }
 \title{Self-optimising distributed encoding nodes}
 \author{Thomas Swarbrick}
 
@@ -37,7 +37,7 @@
     \end{itemize}
 
   \end{exampleblock}
-  \pause
+  \pause2
   But..
   \pause
     \begin{itemize}
@@ -52,7 +52,7 @@
     Bring the Object Based Media (OBM) principle lower down the tool-chain.
 
     Most Compression Algorithms, make use of the 2D DCT II/III as part of their compression/analysis (Think MPEG).
-
+\pause
     \begin{theorem}
       \emph{let} position be time-series \emph{like} such that.
       \[A = \{S^{A}_{0}\cdots S^{A}_{n}\}, B = \{S^{B}_{0}\cdots S^{B}_{m}\}\]
@@ -70,16 +70,16 @@
       Assume $S_{x}$ is identified, and we remove signal $S_{x}$ from the sets.
       \[ A \not= \sigma(B) + \Sigma_{1}, B \not= \sigma(A) + \Sigma_{2}\]
 
-      i.e. A and B e are no longer correlated signals.
-
+      i.e. A and B are no longer correlated signals.
+      \pause
       So take some other set C. \[ C = \{S^{C}_{0}\cdots S^{C}_{p}\}\]
 
       assume $S_{y}$ is such that,
-
+      \pause
       \[  S_{y} \in B,  S_{y} \in C, S_{y} \not\in A, S_{y} \not\in S_{x}\]
-
+      \pause
       \[ B = \Sigma_{2}= \{S_{y}|\Sigma_{3}\}, C = \{S_{y}|\Sigma_{4}\}\]
-
+      \pause
       Figuring out if $S_{y}$ is not in A or $S_{x}$? No Idea.
     \end{theorem}
   \end{frame}
@@ -166,11 +166,69 @@
       How to Assess if $\Sigma_{n}$ is just artefact or truly unique? No idea.
     \end{theorem}
   \end{frame}
-	\subsection{}
-  \section{Demo Implementation}
-  \subsection{CommandLists}
-	\section{Additional Reading}
-	\subsection{A recommended reading list}
-	\section{References}
+	\subsection{Node Distribution }
+  \begin{frame}[t]{Distributing Nodes}{How does sub-division help us?}
+    Similar Encoding properties/objects would be dynamically grouped, and cached to be distributed across a network.
+    \pause
+    \begin{example}
 
+
+    Add a new Client E. Existing parts of E that are already cached closer to the client fetch faster / optimisation to identify similar signals from a lower-quality/partially computed version.
+
+    \vspace{.2cm}
+
+    \begin{tabular}{|c|c|}
+      \hline
+      Client & Servicing Nodes \\
+      \hline
+      A & $\Sigma_{1},S_{x}$ \\
+      B & $\Sigma_{4},S_{x},S_{y}$\\
+      C & $\Sigma_{6},S_{y},S_{z}$\\
+      D & $\Sigma_{5},S_{x},S_{y},S_{z}$\\
+      \hline
+      E & $\Sigma_{7},S_{z},S_{y}$\\
+          \hline
+    \end{tabular}
+  \end{example}
+  \pause
+
+  But how to identify $S_{z}$ in $E$ without full render? No idea.
+
+\end{frame}
+  \section{Testing the hypotheses}
+  \subsection{Generation of  Objects/Cross-correlation}
+  \begin{frame}[t]{Generating Objects}{How do you generate objects dynamically?}
+    Assuming that both signal A and B are correlated if they contain the same object with a different single change.
+    \begin{itemize}
+      \item Cross-Correlation?
+      \item Steerable Pyramids?
+    \end{itemize}
+
+    Current Idea...
+
+    \begin{tikzpicture}
+
+    \end{tikzpicture}
+  \end{frame}
+  \subsection{Optimisation of Objects }
+  \begin{frame}{Optimisation of an Object Tree}{How do you optimise extraction of signals?}
+
+  \end{frame}
+  \subsection{Network Distribution}
+  \begin{frame}{Network Distribution}{How do you distribute this over a network?}
+
+  \end{frame}
+  \subsection{Encoding/Decoding Weights}
+  \begin{frame}{Encoding/Decoding Weights}{How do you identify ways to optimise self consumption/propagation}
+
+  \end{frame}
+  \subsection{Objects as Code (OaC)}
+\begin{frame}{Dynamic Generation}{Identifying Objects as Code (OaC) and their applications}
+
+\end{frame}
+\section{Any Questions}
+\section{References/Inspiration}
+\begin{frame}
+
+\end{frame}
 \end{document}
