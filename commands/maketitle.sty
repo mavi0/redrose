@@ -1,6 +1,7 @@
+\makeatletter
 \renewcommand{\maketitle}{%
-  \begin{tikzpicture}
-      \useasboundingbox (2.5,2.5) rectangle(\the\paperwidth,\the\paperheight);
+  \begin{tikzpicture}[overlay]
+      \useasboundingbox (10,2.5) rectangle(\the\paperwidth,\the\paperheight);
       \fill[darkgrey] (0,0) -- (0,1.1\paperheight) -- (.29\paperwidth,1.1\paperheight) -- (.29\paperwidth,0);
       \fill[grey] (0,0) -- (0,1.1\paperheight) -- (.278\paperwidth,1.1\paperheight) -- (.278\paperwidth,0);
       \fill[red] (0,0) -- (0,1.1\paperheight) -- (.275\paperwidth,1.1\paperheight) -- (.275\paperwidth,0) ;
@@ -20,3 +21,4 @@
       };
     \end{tikzpicture}
 }
+\makeatother
