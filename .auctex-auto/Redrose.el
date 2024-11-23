@@ -4,7 +4,7 @@
  "Redrose"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("color" "") ("tikz" "") ("transparent" "") ("biblatex" "backend=bibtex") ("graphicx" "") ("tikzpagenodes" "") ("background" "bottom" "top") ("geometry" "")))
+                     '(("color" "") ("tikz" "") ("transparent" "") ("biblatex" "backend=bibtex") ("graphicx" "") ("tikzpagenodes" "") ("background" "bottom" "top") ("atbegshi" "") ("geometry" "")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
@@ -20,6 +20,7 @@
     "graphicx"
     "tikzpagenodes"
     "background"
+    "atbegshi"
     "geometry"))
  :latex)
 

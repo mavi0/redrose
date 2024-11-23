@@ -5,6 +5,8 @@
 \RequirePackage{graphicx}
 \usepackage{tikzpagenodes} % Stuck with this now ..
 \usepackage[bottom,top]{background}
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\addtocounter{page}{-1}\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
 \SetBgContents{
 % Insert the image onto the background
