@@ -3,6 +3,7 @@
 \RequirePackage{tikz,transparent}
 \usepackage[backend=bibtex]{biblatex}
 \RequirePackage{graphicx}
+\usepackage{tikzpagenodes} % Stuck with this now ..
 \usepackage[bottom,top]{background}
 
 \SetBgContents{
@@ -29,6 +30,7 @@
  }
 
 \renewcommand\@dotsep{200}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
 
 \renewcommand{\sfdefault}{qhv}
 \renewcommand{\familydefault}{\sfdefault}
