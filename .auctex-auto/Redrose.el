@@ -4,7 +4,7 @@
  "Redrose"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("color" "") ("tikz" "") ("transparent" "") ("graphicx" "") ("geometry" "")))
+                     '(("color" "") ("tikz" "") ("transparent" "") ("graphicx" "") ("background" "bottom" "top") ("geometry" "")))
    (TeX-run-style-hooks
     "colours"
     "commands/maketitle"
@@ -12,6 +12,7 @@
     "tikz"
     "transparent"
     "graphicx"
+    "background"
     "geometry"))
  :latex)
 

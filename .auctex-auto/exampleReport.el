@@ -4,13 +4,13 @@
  "exampleReport"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("report" "")))
+                     '(("scrreprt" "")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("Redrose" "")))
    (TeX-run-style-hooks
     "latex2e"
-    "report"
-    "rep10"
+    "scrreprt"
+    "scrreprt10"
     "Redrose"))
  :latex)
 

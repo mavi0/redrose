@@ -2,9 +2,22 @@
 \usepackage{color}
 \RequirePackage{tikz,transparent}
 \RequirePackage{graphicx}
+\usepackage[bottom,top]{background}
+
+\SetBgContents{
+% Insert the image onto the background
+  \begin{tikzpicture}
+    \node[opacity=0.05] at (.55\paperwidth,.5\paperheight) {
+      \vspace{.5cm}
+      \hspace{-.2cm}
+
+      \includegraphics[width=.185\paperwidth]{img/coat_of_arms_grey.png}
 
 
+    };
 
+  \end{tikzpicture}
+}
 \usepackage{geometry}
  \geometry{
  a4paper,
