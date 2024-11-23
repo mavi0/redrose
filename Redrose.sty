@@ -1,6 +1,7 @@
 \ProvidesPackage{Redrose}[\today]
 \usepackage{color}
 \RequirePackage{tikz,transparent}
+\usepackage[backend=bibtex]{biblatex}
 \RequirePackage{graphicx}
 \usepackage[bottom,top]{background}
 
@@ -27,8 +28,12 @@
  bottom=25mm,
  }
 
+\renewcommand\@dotsep{200}
+
 \renewcommand{\sfdefault}{qhv}
 \renewcommand{\familydefault}{\sfdefault}
 
 \include{colours.sty}
+
 \include{commands/maketitle.sty}
+\include{commands/tableofcontents.sty}

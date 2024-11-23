@@ -1,7 +1,8 @@
 \makeatletter
 \renewcommand{\maketitle}{%
-  \begin{tikzpicture}[overlay]
-      \useasboundingbox (10,2.5) rectangle(\the\paperwidth,\the\paperheight);
+  
+  \begin{tikzpicture}
+      \useasboundingbox (2.5,2.5) rectangle(\the\paperwidth,\the\paperheight);
       \fill[darkgrey] (0,0) -- (0,1.1\paperheight) -- (.29\paperwidth,1.1\paperheight) -- (.29\paperwidth,0);
       \fill[grey] (0,0) -- (0,1.1\paperheight) -- (.278\paperwidth,1.1\paperheight) -- (.278\paperwidth,0);
       \fill[red] (0,0) -- (0,1.1\paperheight) -- (.275\paperwidth,1.1\paperheight) -- (.275\paperwidth,0) ;
@@ -15,9 +16,24 @@
         {\@author}
 
         \makebox[.68\paperwidth]{\rule{0.68\paperwidth}{0.1pt}}\hfill
-        \vspace{-2cm}
+
 
         \tableofcontents
+      };
+      \node [anchor=south west,white,text width = 5.5cm] at (0.1,2) {\tiny
+
+        \textbf{References, Sources, \& Further Reading}
+
+        \makebox[5.3cm]{\rule{5.3cm}{0.1pt}}\hfill
+
+        \begingroup
+        \renewcommand*{\bibfont}{\tiny}
+        \renewcommand{\chapter}[2]{}%
+        {\small\printbibliography}
+        \endgroup
+
+        \makebox[5.3cm]{\rule{5.3cm}{0.1pt}}\hfill
+        \textbf{v1.redrose © All rights reserved.}
       };
     \end{tikzpicture}
 }
