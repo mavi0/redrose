@@ -5,13 +5,19 @@
 
 \ProvidesPackage{beamerthemeRedrose}[\today]
 \usepackage{color}
+\usepackage{biblatex}
 %\RequirePackage[OT1]{fontenc}
 
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols
 
-
+\newif\if@showBib
+\@showBibfalse
+\DeclareOption{bib}{\@showBibtrue}
+\newif\if@showContents
+\@showContentstrue
+\DeclareOption{nocontents}{\@showContentsfalse}
 \newif\if@doEnglish
 \@doEnglishfalse
 \DeclareOption{en}{\@doEnglishtrue}
