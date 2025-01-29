@@ -5,16 +5,10 @@
 This is a $\LaTeX$ theme that can be used to generate nice-ish looking pdfs.
 
 * Supported Styles
-There are currently two supported styles:
-- CompSoc
-- SCC
+There are currently one supported styles:
+- SCC (School of Computing and Communications)
 The following styles are in development:
-- None
+- Maths (Eventually)
 
-* How to use
-Clone this repo into your beamer file, and you can probably figure out the rest. If anyone else ever uses this I'll probably write a nicer How to for it.
-
-If you're using this with org. I use doom and that is the only version that I'm planning on 'supporting' right now.
-
-* Usecase
-This is use-case targeted for teaching computer science. Mathematicians are welcome to use it. But I don't plan on explicitly supporting this style of usage, so please don't open an issue about some random quirky maths display issue that is only relevant in a specific 400 module.
+* How to!
+Clone this repo into your `~/texmf/tex/latex/commonstuff/` file, and you can probably figure out the rest. If anyone else ever uses this I'll probably write a nicer "How to" for this.
