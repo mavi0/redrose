@@ -1,8 +1,8 @@
 #+title: v1.redrose
 
- [[./img/scc_logo.png]]
+ [[./img/coat_of_arms.png]]
 
-This is a $\LaTeX$ theme that can be used to generate nice-ish looking pdfs.
+This is a $\LaTeX$ theme that can be used to generate nice-ish looking pdfs, that are colour co-ordinated to the University of Lancaster's colours.
 
 * Supported Styles
 There are currently one supported styles:
