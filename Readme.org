@@ -1,8 +1,8 @@
-#+title: v1.redrose $\LaTeX$
+#+title: v1.redrose
 
  [[./img/scc_logo.png]]
 
-This is a latex theme that can be used to generate nice-ish looking pdfs.
+This is a $\LaTeX$ theme that can be used to generate nice-ish looking pdfs.
 
 * Supported Styles
 There are currently two supported styles:
