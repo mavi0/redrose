@@ -11,7 +11,7 @@ The following styles are in development:
 - Maths (Eventually)
 
 * How to!
-Clone this repo into your src_bash{} file, and you can probably figure out the rest. If anyone else ever uses this I'll probably write a nicer "How to" for this.
+Clone this repo into your tex file, and you can probably figure out the rest via looking at the examples. If anyone else ever uses this I'll probably write a nicer "How to" for this.
 
 * Install
 Installation script (assuming full latex install)
