@@ -23,7 +23,7 @@ mkdir  ~/texmf/tex/latex/commonstuff &
 git clone github.com/swartom/redrose ~/texmf/tex/latex/commonstuff
 #+END_SRC
 * What do you get?
-Powerpoints are generated as follows:
+PDFs are generated as follows:
 
 [[./example.pdf]]
 
