@@ -2,7 +2,7 @@
 
  [[./img/coat_of_arms.png]]
 
- - "crest looks so cool" - Tom
+ - "the crest! It looks so cool" - Tom
 
 This is a $\LaTeX$ theme that can be used to generate nice-ish looking pdfs, that are colour co-ordinated to the University of Lancaster's colours.
 
