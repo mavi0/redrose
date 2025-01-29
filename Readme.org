@@ -15,6 +15,6 @@ Clone this repo into your src_bash{} file, and you can probably figure out the r
 
 #+NAME: Installation script (assuming full latex install)
 #+BEGIN_SRC bash
-        mkdir  ~/texmf/tex/latex/commonstuff &
+mkdir  ~/texmf/tex/latex/commonstuff &
 git clone github.com/swartom/redrose ~/texmf/tex/latex/commonstuff
 #+END_SRC
