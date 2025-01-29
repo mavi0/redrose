@@ -1,3 +1,4 @@
+[[./img/scc_logo.png]]
 
 #+title: The Redrose
 
