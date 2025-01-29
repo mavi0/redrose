@@ -1,6 +1,7 @@
-#+title: Redrose
 
-This is a beamer-org theme I use for power-points whilst teaching as a TA/Society/AL at the University of Lancaster.
+#+title: The Redrose
+
+This is a latex theme that can be used to generate nice-ish looking pdfs.
 
 * Supported Styles
 There are currently two supported styles:

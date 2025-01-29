@@ -1,232 +1,66 @@
-\documentclass[nocontents]{beamer}
-
+\documentclass[]{beamer}
 % Options are:
-% Language Used:
-% en - British English
-% de - Standard German
-% cy - Welsh
+% - nocontents -> don't show the contents page.
+% - bib -> show a bib on title.
+%
+
 \usetheme{Redrose}
 
-\module{NRG.AI4ME} % need to add this
-\role{PhD Candidate}
-\email{t.swarbrick}
-% Need to reference a Collegue?
+\module{WHATEVERMODULE} % need to add this
+\role{Your Role}
+\email{f.surname}
 
-\title{Self-optimising distributed encoding networks}
-\author{Thomas Swarbrick}
+% Need to acknowledge? It's not needed
+\acknowledge{Made in \LaTeX, coded by tom@nrg}
+\title{Title goes here, be slightly verbose, it looks nicer!}
+\author{Jane Doe}
 
 \begin{document}
 \maketitle
-\section{Object Based Media}
-\subsection{Traditional}
-\begin{frame}[t]{Object Based Media}{A Static Approach to Objects}
-  \begin{alertblock}{What is an object in object based media?}
-    \begin{itemize}
-\item Customisation of Characteristic, but the meta characteristics remain constant.
-      \item Large customisable overlap, but not computationally feasible on the client-side.
-    \end{itemize}
+\section{And here we can put}
+\begin{frame}[t]{Frame title goes here}{A description of the frame title goes here as a subtitle}
+  \subsection{A clickable breakdown}
+  \begin{exampleblock}{The Discrete Noiseless Channel}
+    IN the more general case with different length of symbols and constraints on the allowed sequences, we make the following definition:
+    \subsection{of each individual thing in the pdf}
+    \begin{quote}
+      The capacity $C$ of a discrete channel is given by
+    \end{quote}
+    \[ C = \lim_{T \to \infty}  \frac{logN(T)}{T}\]
 
+    \begin{quote}
+    where N(T) is the number of allowed signals of duration $T$.
+  \end{quote}
+\end{exampleblock}
+\subsection{Along with references to view}
+  \begin{theorem}
+    \[C = \lim_{T->\infty}\frac{LogAX^{T}_{0}}{T} = logX_{0}\]
+  \end{theorem}
+\end{frame}
+\section{To enable students}
+\begin{frame}[t]{Frame title goes here}{A description of the frame title goes here as a subtitle}
+  \subsection{easy navigation}
+  \begin{itemize}
+    \item You can list.
+    \item A load of items.
+    \item Like this
+  \end{itemize}
+  Or ..
+  \subsection{of individual bits}
+  \begin{alertblock}{Outline something a bit more important}
+    \begin{itemize}
+      \item And amortised
+            \begin{itemize}
+              \item in great detail
+                    \begin{itemize}
+                      \item how it works.
+                    \end{itemize}
+            \end{itemize}
+
+
+    \end{itemize}
   \end{alertblock}
-  \pause
-  \begin{exampleblock}{Traditional Approach}
-    \begin{itemize}
-\item Changeable T-shirt colour
-\item Geographically Specific Weather Map
-    \end{itemize}
-
-  \end{exampleblock}
-  \pause
-  But..
-  \pause
-    \begin{itemize}
-\item Fixed in scope
-      \item Susceptible to compute cost constraints.
-    \end{itemize}
-    \pause
-
-\end{frame}
-  \subsection{Dynamic Objects}xo
-  \begin{frame}[t]{Object Based Media}{Encoder streams as Objects}
-    Bring the Object Based Media (OBM) principle lower down the tool-chain.
-
-    Most Compression Algorithms, make use of the 2D DCT II/III as part of their compression/analysis (Think MPEG).
-\pause
-    \begin{theorem}
-      \emph{let} position be time-series \emph{like} such that.
-      \[A = \{S^{A}_{0}\cdots S^{A}_{n}\}, B = \{S^{B}_{0}\cdots S^{B}_{m}\}\]
-      where for a given object $S_{x}$ assume. \[ S_{x} \in A, S_{x} \in B\]
-      \[  A =\{S_{x} | \Sigma_{1} \}, B = \{S_{x} | \Sigma_{2}\}\]
-      such that.
-      \[\Sigma_{1} \not\subset B, \Sigma_{2} \not\subset A\]
-      \pause
-     But how do you identify $S_{X}$? No idea.
-    \end{theorem}
-  \end{frame}
-
-  \begin{frame}[t]{Object Based Media}{Encoder streams as Objects}
-    \begin{theorem}
-      Assume $S_{x}$ is identified, and we remove signal $S_{x}$ from the sets.
-      \[ A \not= \sigma(B) + \Sigma_{1}, B \not= \sigma(A) + \Sigma_{2}\]
-
-      i.e. A and B are no longer correlated signals.
-      \pause
-      So take some other set C. \[ C = \{S^{C}_{0}\cdots S^{C}_{p}\}\]
-
-      assume $S_{y}$ is such that,
-      \pause
-      \[  S_{y} \in B,  S_{y} \in C, S_{y} \not\in A, S_{y} \not\in S_{x}\]
-      \pause
-      \[ B = \Sigma_{2}= \{S_{y}|\Sigma_{3}\}, C = \{S_{y}|\Sigma_{4}\}\]
-      \pause
-      Figuring out if $S_{y}$ is not in A or $S_{x}$? No Idea.
-    \end{theorem}
-  \end{frame}
-  \section{High Level Overview}
-  \subsection{Worked Example}
-  \begin{frame}[t]{High Level Overview}{Self-Optimising Objects}
-    \vspace{.5cm}
-      \begin{tikzpicture}
-        \node at (0,0) [circle,draw] (A) {$A$};
-        \node at (6,1) [rectangle,draw] (sx) {$S_{x}$};
-
-        \node at (0,2) [circle,draw] (B) {$B$};
-        \draw (A) -- (sx);
-        \draw (B) -- (sx);
-
-        \pause
-        \node at (6,3) [rectangle,draw] (sy) {$S_{y}$};
-        \node at (6,0) [] (sig1) {$\Sigma_{1}$};
-        \node at (3,2) [] (sig2) {$\Sigma_{2}$};
-        \node at (0,4) [circle,draw] (C) {$C$};
-        \draw (A) -- (sig1);
-        \draw (B) -- (sig2);
-        \draw (sig2) -- (sy);
-        \draw (C) -- (sy);
-        \pause
-
-        \node at (3,4) [] (sig3) {$\Sigma_{3}$};
-        \node at (6,2) [] (sig4) {$\Sigma_{4}$};
-        \draw (sig2) -- (sig4);
-
-        \draw (C) -- (sig3);
-      \pause
-      \node at (0,6) [circle,draw] (D) {$D$};
-      \pause
-      \draw (D) -- (sx) ;
-      \pause
-      \draw (D) -- (sy) ;
-      \pause
-      \node at (6,5) [rectangle,draw] (sz) {$S_{z}$};
-      \draw (sig3) -- (sz);
-      \draw (D) -- (sz);
-      \pause
-      \node at (6,6) [] (sig5) {$\Sigma_{5}$};
-      \draw (D) -- (sig5);
-
-      \pause
-      \node at (6,4) [] (sig32) {$\Sigma_{6}$};
-      \draw (sig3) -- (sig32);
-      \pause
-      \node at (9,3) [] (obj) {Objects!? Maybe... };
-      %\draw (obj) -- (sig32);
-      \draw (obj) -- (sy);
-      %\draw (obj) -- (sig4);
-      \draw (obj) -- (sx);
-      %\draw (obj) -- (sig1);
-      \draw (obj) -- (sz);
-      % \draw (obj) -- (sig5);
-      \pause
-      \node at (5, -.8)[] {How do you optimise the ordering for encoder objects? No idea.};
-    \end{tikzpicture}
-  \end{frame}
-	\subsection{Toy Example}
-  \begin{frame}[t]{Toy Example}{Alice, Bob, Charlie, Dave}
-    \vspace{.1cm}
-    \begin{tabular}{|c|c|}
-      \hline
-      Client & Servicing Nodes \\
-      \hline
-      A & $\Sigma_{1},S_{x}$ \\
-      B & $\Sigma_{4},S_{x},S_{y}$\\
-      C & $\Sigma_{6},S_{y},S_{z}$\\
-      D & $\Sigma_{5},S_{x},S_{y},S_{z}$\\
-      \hline
-    \end{tabular}
-    \pause
-    \begin{theorem}
-      assume that if the set is  an itemised set of objects.
-      \[\Sigma_{n} \to \emptyset \]
-
-      Discard $\Sigma_{n}$ as remainder Over large number of nodes.
-      \[ A = {S_{x}}, B = {S_{x},S_{y}} \cdots\]
-      \pause
-
-      How to Assess if $\Sigma_{n}$ is just artefact or truly unique? No idea.
-    \end{theorem}
-  \end{frame}
-	\subsection{Node Distribution }
-  \begin{frame}[t]{Distributing Nodes}{How does sub-division help us?}
-    Similar Encoding properties/objects would be dynamically grouped, and cached to be distributed across a network.
-    \pause
-    \begin{example}
-
-
-    Add a new Client E. Existing parts of E that are already cached closer to the client fetch faster / optimisation to identify similar signals from a lower-quality/partially computed version.
-
-    \vspace{.2cm}
-
-    \begin{tabular}{|c|c|}
-      \hline
-      Client & Servicing Nodes \\
-      \hline
-      A & $\Sigma_{1},S_{x}$ \\
-      B & $\Sigma_{4},S_{x},S_{y}$\\
-      C & $\Sigma_{6},S_{y},S_{z}$\\
-      D & $\Sigma_{5},S_{x},S_{y},S_{z}$\\
-      \hline
-      E & $\Sigma_{7},S_{z},S_{y}$\\
-          \hline
-    \end{tabular}
-  \end{example}
-  \pause
-
-  But how to identify $S_{z}$ in $E$ without full render? No idea.
-
-\end{frame}
-  \section{Testing the hypotheses}
-  \subsection{Generation of  Objects/Cross-correlation}
-  \begin{frame}[t]{Generating Objects}{How do you generate objects dynamically?}
-    Assuming that both signal A and B are correlated if they contain the same object with a different single change.
-    \begin{itemize}
-      \item Cross-Correlation?
-      \item Steerable Pyramids?
-    \end{itemize}
-
-    Current Idea...
-
-    \begin{tikzpicture}
-
-    \end{tikzpicture}
-  \end{frame}
-  \subsection{Optimisation of Objects }
-  \begin{frame}{Optimisation of an Object Tree}{How do you optimise extraction of signals?}
-
-  \end{frame}
-  \subsection{Network Distribution}
-  \begin{frame}{Network Distribution}{How do you distribute this over a network?}
-
-  \end{frame}
-  \subsection{Encoding/Decoding Weights}
-  \begin{frame}{Encoding/Decoding Weights}{How do you identify ways to optimise self consumption/propagation}
-
-  \end{frame}
-  \subsection{Objects as Code (OaC)}
-\begin{frame}{Dynamic Generation}{Identifying Objects as Code (OaC) and their applications}
-
-\end{frame}
-\section{Any Questions}
-\section{References/Inspiration}
-\begin{frame}
-
+  \section{Which grows}
+  \subsection{Upwards}
 \end{frame}
 \end{document}
