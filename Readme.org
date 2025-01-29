@@ -20,3 +20,11 @@ Installation script (assuming full latex install)
 mkdir  ~/texmf/tex/latex/commonstuff &
 git clone github.com/swartom/redrose ~/texmf/tex/latex/commonstuff
 #+END_SRC
+* What do you get?
+Powerpoints are generated as follows:
+
+[[./example.pdf]]
+
+Reports are generated as follows:
+
+[[./exampleReport.pdf]]
