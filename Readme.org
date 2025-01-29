@@ -1,6 +1,4 @@
-[[./img/scc_logo.png]]
-
-#+title: [[./img/scc_logo.png]] $\LaTeX$ theme: v1.redrose
+#+title: [[./img/crest.png]] $\LaTeX$ v1.redrose
 
 This is a latex theme that can be used to generate nice-ish looking pdfs.
 
