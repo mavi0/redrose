@@ -6,27 +6,31 @@
 
 \setbeamertemplate{frametitle}{%
   \nointerlineskip%
-    \begin{beamercolorbox}[wd=\paperwidth,ht=2.8ex,dp=0.6ex]{frametitle}
-      \vspace{.1ex}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=3.8ex,dp=0.6ex]{frametitle}
+      \changefontsizes{8pt}
 
-      {\large \hspace{.1cm} \insertframetitle }
-      \vspace{-.4cm}
+      \large{\hspace{.1cm} \insertframetitle }
 
-      {\tiny  \hspace{.2cm} \insertframesubtitle}%
+      \color{grey}
+      \vspace{-.07cm}
 
-
+      \small\emph{\hspace{.0cm} \insertframesubtitle}%
     \end{beamercolorbox}%
+    \vspace{.2cm}
 }
 \setbeamertemplate{background}{
+
   \ifnum\thepage>1\relax
     \begin{tikzpicture}
-      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-      \fill[darkgrey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.8875\paperheight) -- (-1,.8875\paperheight);
-      \fill[grey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.915\paperheight) -- (-1,.915\paperheight);
-      \fill[red,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.925\paperheight) -- (-1,.925\paperheight);
-      \node[white, anchor=south west] at (.725\paperwidth,0){\includegraphics[width=0.3\textwidth]{img/scc_logo.png}};
+
+      \useasboundingbox (-1,0) rectangle(\the\paperwidth,\the\paperheight);
+
+      \fill[darkgrey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.8775\paperheight) -- (-1,.8775\paperheight);
+      \fill[grey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.906\paperheight) -- (-1,.906\paperheight);
+      \fill[red,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.915\paperheight) -- (-1,.915\paperheight);
+      %\node[white, anchor=south west] at (.725\paperwidth,0){\includegraphics[width=0.3\textwidth]{img/scc_logo.png}};
       %\node[white, anchor=south west] at (0,.876\paperheight){\hfill{\tiny SCC.\Module: \inserttitle}};
-      \node[opacity=.05,anchor=south east] at (0.55\paperwidth,.06\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
+      \node[opacity=.05,anchor=south east] at (0.45\paperwidth,.085\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
     \end{tikzpicture}
   \fi
 }
@@ -34,8 +38,8 @@
   \begin{tikzpicture}
 
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-    \node[white, anchor=north west] at (.647\paperwidth,.0715\textwidth){\includegraphics[width=0.3\textwidth]{img/scc_logo.png}};
-    \node[opacity=.05,anchor=south west] at (0.45\paperwidth,.06\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
+    %\node[white, anchor=north west] at (.647\paperwidth,.0715\textwidth){\includegraphics[width=0.3\textwidth]{img/scc_logo.png}};
+    \node[opacity=.05,anchor=south west] at (0.45\paperwidth,.085\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
     \ifnum\thepage=1
             \node[grey,anchor=south west,inner sep=0] at (6.1,1.3) {\centering
 
@@ -45,49 +49,70 @@
       \fill[red,opacity=1] (-1,0) -- (3.7,0) -- (7.7,1.1\paperheight) -- (-1,1.1\paperheight);
 
       % $ Double up looks nice$
-      \node[white,anchor=north west, inner sep=0, text width = 6cm] at (-.5,0.95\paperheight){%
-          \large{SCC.\Module:
-          \inserttitle.}
+      \node[white,anchor=north west, inner sep=0, text width = 6cm] at (-.9,0.98\paperheight){%
+        \changefontsizes{8pt}
+        \large{SCC.\Module}
+        \vspace{-.1cm}
+
+        \emph{\small\color{grey} \inserttitle}
       };
       \if@showContents
       \node[white,anchor=south west, inner sep=0, text width = 5cm] at (-.5,0.5){%
-        \tiny{Overview of Today's Presentation
-          \makebox[4cm]{\rule{0.33\paperwidth}{0.1pt}}\hfill
-          \vspace{0.2cm}
-          \tableofcontents
-          }
-      };
-      \fi
-      \node[white,anchor=north west, inner sep=0, text width = 6cm] at (-.5,0.95\paperheight){%
-          \large{SCC.\Module:
-          \inserttitle.}
-      };
-      \node[darkgrey,anchor=north west, inner sep=0, text width = 3cm] at (0.65\paperwidth,0.95\paperheight){%
-        \hfill\insertauthor
 
-        \hfill \Role
+        \changefontsizes{11pt}
+        {\tiny
+        Summary \& Breakdown
 
-        \hfill {\tiny{\Email}{@lancaster.ac.uk}}
+        \vspace{-.15cm}
+
+        \color{grey}
 
         \makebox[3cm]{\rule{0.25\paperwidth}{0.1pt}}\hfill
+        \vspace{.05cm}
+
+        \color{white}
+
+          \tableofcontents
+        }
+      };
+      \fi
+
+      \node[darkgrey,anchor=south west, inner sep=0, text width = 6cm] at (0.44\paperwidth,0\paperheight){\changefontsizes{10pt}
+
+
+          \ifdefined\Acknowledgement{\tiny
+
+
+              \hfill Acknowledgements
+
+
+              \hfill\scalebox{.8}{\Acknowledgement}
+
+          }
+
+          \color{grey}
+          \hfill \makebox[3cm]{\rule{0.25\paperwidth}{0.1pt}}
+          \color{darkgrey}
+        \fi
+
+
+
+
+        \hfill\insertauthor
+
+        \vspace{-.2cm}
+
+
+        \color{darkgrey}\emph{\tiny\hfill \Role} {\tiny{\Email}{@lancaster.ac.uk}}
+
+        \vspace{-.2cm}
 
         \hfill \date{\today}
         \if@showBib
           \printbibliography
           \makebox[3cm]{\rule{0.25\paperwidth}{0.1pt}}\hfill
         \fi
-        \tiny{
-          \ifdefined\Acknowledgement{
 
-
-              \hfill Acknowledgements
-
-
-              \hfill\scalebox{.5}{\Acknowledgement}
-
-          }
-        \fi
-        }
       };
     \fi
     \ifnum\thepage>1\relax

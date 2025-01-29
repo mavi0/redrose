@@ -9,58 +9,58 @@
 \headcommand {\beamer@framepages {2}{6}}
 \headcommand {\beamer@subsectionpages {2}{6}}
 \headcommand {\beamer@subsectionentry {0}{1}{2}{7}{Dynamic Objects}}
-\headcommand {\slideentry {1}{2}{1}{7/9}{Dynamic Objects}{0}}
-\headcommand {\beamer@framepages {7}{9}}
-\headcommand {\slideentry {1}{2}{2}{10/14}{Dynamic Objects}{0}}
-\headcommand {\beamer@framepages {10}{14}}
-\headcommand {\beamer@sectionpages {2}{14}}
-\headcommand {\beamer@subsectionpages {7}{14}}
-\headcommand {\sectionentry {2}{High Level Overview}{15}{High Level Overview}{0}}
-\headcommand {\beamer@subsectionpages {15}{14}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{15}{Worked Example}}
-\headcommand {\slideentry {2}{1}{1}{15/25}{Worked Example}{0}}
-\headcommand {\beamer@framepages {15}{25}}
-\headcommand {\beamer@subsectionpages {15}{25}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{26}{Toy Example}}
-\headcommand {\slideentry {2}{2}{1}{26/28}{Toy Example}{0}}
-\headcommand {\beamer@framepages {26}{28}}
-\headcommand {\beamer@subsectionpages {26}{28}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{29}{Node Distribution }}
-\headcommand {\slideentry {2}{3}{1}{29/31}{Node Distribution }{0}}
-\headcommand {\beamer@framepages {29}{31}}
-\headcommand {\beamer@sectionpages {15}{31}}
-\headcommand {\beamer@subsectionpages {29}{31}}
-\headcommand {\sectionentry {3}{Testing the hypotheses}{32}{Testing the hypotheses}{0}}
-\headcommand {\beamer@subsectionpages {32}{31}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{32}{Generation of Objects/Cross-correlation}}
-\headcommand {\slideentry {3}{1}{1}{32/32}{Generation of Objects/Cross-correlation}{0}}
-\headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@subsectionpages {32}{32}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{33}{Optimisation of Objects }}
-\headcommand {\slideentry {3}{2}{1}{33/33}{Optimisation of Objects }{0}}
+\headcommand {\slideentry {1}{2}{1}{7/10}{Dynamic Objects}{0}}
+\headcommand {\beamer@framepages {7}{10}}
+\headcommand {\slideentry {1}{2}{2}{11/15}{Dynamic Objects}{0}}
+\headcommand {\beamer@framepages {11}{15}}
+\headcommand {\beamer@sectionpages {2}{15}}
+\headcommand {\beamer@subsectionpages {7}{15}}
+\headcommand {\sectionentry {2}{High Level Overview}{16}{High Level Overview}{0}}
+\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{16}{Worked Example}}
+\headcommand {\slideentry {2}{1}{1}{16/26}{Worked Example}{0}}
+\headcommand {\beamer@framepages {16}{26}}
+\headcommand {\beamer@subsectionpages {16}{26}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{27}{Toy Example}}
+\headcommand {\slideentry {2}{2}{1}{27/29}{Toy Example}{0}}
+\headcommand {\beamer@framepages {27}{29}}
+\headcommand {\beamer@subsectionpages {27}{29}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{30}{Node Distribution }}
+\headcommand {\slideentry {2}{3}{1}{30/32}{Node Distribution }{0}}
+\headcommand {\beamer@framepages {30}{32}}
+\headcommand {\beamer@sectionpages {16}{32}}
+\headcommand {\beamer@subsectionpages {30}{32}}
+\headcommand {\sectionentry {3}{Testing the hypotheses}{33}{Testing the hypotheses}{0}}
+\headcommand {\beamer@subsectionpages {33}{32}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{33}{Generation of Objects/Cross-correlation}}
+\headcommand {\slideentry {3}{1}{1}{33/33}{Generation of Objects/Cross-correlation}{0}}
 \headcommand {\beamer@framepages {33}{33}}
 \headcommand {\beamer@subsectionpages {33}{33}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{34}{Network Distribution}}
-\headcommand {\slideentry {3}{3}{1}{34/34}{Network Distribution}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{34}{Optimisation of Objects }}
+\headcommand {\slideentry {3}{2}{1}{34/34}{Optimisation of Objects }{0}}
 \headcommand {\beamer@framepages {34}{34}}
 \headcommand {\beamer@subsectionpages {34}{34}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{35}{Encoding/Decoding Weights}}
-\headcommand {\slideentry {3}{4}{1}{35/35}{Encoding/Decoding Weights}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{35}{Network Distribution}}
+\headcommand {\slideentry {3}{3}{1}{35/35}{Network Distribution}{0}}
 \headcommand {\beamer@framepages {35}{35}}
 \headcommand {\beamer@subsectionpages {35}{35}}
-\headcommand {\beamer@subsectionentry {0}{3}{5}{36}{Objects as Code (OaC)}}
-\headcommand {\slideentry {3}{5}{1}{36/36}{Objects as Code (OaC)}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{36}{Encoding/Decoding Weights}}
+\headcommand {\slideentry {3}{4}{1}{36/36}{Encoding/Decoding Weights}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\beamer@sectionpages {32}{36}}
 \headcommand {\beamer@subsectionpages {36}{36}}
-\headcommand {\sectionentry {4}{Any Questions}{37}{Any Questions}{0}}
-\headcommand {\beamer@sectionpages {37}{36}}
-\headcommand {\beamer@subsectionpages {37}{36}}
-\headcommand {\sectionentry {5}{References/Inspiration}{37}{References/Inspiration}{0}}
-\headcommand {\slideentry {5}{0}{1}{37/37}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{37}{Objects as Code (OaC)}}
+\headcommand {\slideentry {3}{5}{1}{37/37}{Objects as Code (OaC)}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@partpages {1}{37}}
+\headcommand {\beamer@sectionpages {33}{37}}
 \headcommand {\beamer@subsectionpages {37}{37}}
-\headcommand {\beamer@sectionpages {37}{37}}
-\headcommand {\beamer@documentpages {37}}
+\headcommand {\sectionentry {4}{Any Questions}{38}{Any Questions}{0}}
+\headcommand {\beamer@sectionpages {38}{37}}
+\headcommand {\beamer@subsectionpages {38}{37}}
+\headcommand {\sectionentry {5}{References/Inspiration}{38}{References/Inspiration}{0}}
+\headcommand {\slideentry {5}{0}{1}{38/38}{}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\beamer@partpages {1}{38}}
+\headcommand {\beamer@subsectionpages {38}{38}}
+\headcommand {\beamer@sectionpages {38}{38}}
+\headcommand {\beamer@documentpages {38}}
 \headcommand {\gdef \inserttotalframenumber {13}}

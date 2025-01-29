@@ -3,10 +3,11 @@
 % Designed and Written:
 % swarbrick.eu.org
 
-\ProvidesPackage{beamerthemeRedrose}[\today]
+\ProvidesPackage{beamerthemeRedrose}
 \usepackage{color}
 \usepackage{biblatex}
-%\RequirePackage[OT1]{fontenc}
+\usepackage{scrextend}
+
 
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
@@ -46,6 +47,12 @@
 }
 
 \include{colours.sty}
+\AtBeginDocument{
+  \color{black}\global\let\default@color\current@color
+
+}
+
+\changefontsizes{8pt}
 % \setbeamercolor{titlelike}{parent=structure,bg=red,fg=white}
 
 % \setbeamercolor{title text}{fg=black}
