@@ -1,4 +1,6 @@
-#+title: [[./img/scc_logo.png]]  @@latex:\\ \textbf{v1.redrose} \\ \LaTeX@@
+#+title: v1.redrose $\LaTeX$
+
+ [[./img/scc_logo.png]]
 
 This is a latex theme that can be used to generate nice-ish looking pdfs.
 
