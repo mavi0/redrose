@@ -13,6 +13,8 @@ The following styles are in development:
 * How to!
 Clone this repo into your src_bash{} file, and you can probably figure out the rest. If anyone else ever uses this I'll probably write a nicer "How to" for this.
 
+* Install
+Installation script (assuming full latex install)
 #+NAME: Installation script (assuming full latex install)
 #+BEGIN_SRC bash
 mkdir  ~/texmf/tex/latex/commonstuff &
