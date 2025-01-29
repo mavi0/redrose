@@ -30,3 +30,6 @@ Powerpoints are generated as follows:
 Reports are generated as follows:
 
 [[./exampleReport.pdf]]
+
+* Feature Requests
+Want something to be added? Raise an issue or send me an email if you're from the uni (in the pure dir, will probably reply to this quicker).
