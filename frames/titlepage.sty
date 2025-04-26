@@ -111,7 +111,7 @@
               \draw[thick, grey] (d) -- (i) -- (e);
               \draw[thick, grey] (c) -- (h);
 
-              \node[thick, grey,circle,fill] (j) at (.5\paperwidth,.9\paperheight) {};
+              \node[thick, grey,circle] (j) at (.5\paperwidth,.9\paperheight) {};
               \draw[thick, grey] (h) -- (j) -- (i);
 
               \node[thick, grey,circle] (k) at (.75\paperwidth,.9\paperheight) {};
@@ -136,6 +136,7 @@
               \draw[thick,grey] (p) -- (g);
               \draw[thick,grey] (b) -- (q);
               \draw[thick,grey] (l)--  (r) -- (g);
+              \draw[thick,grey] (n) -- (m) -- (j);
             \else
                   \node[opacity=.05,anchor=south west] at (0.45\paperwidth,.085\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
               \fill[darkgrey,opacity=1] (-1,0) -- (4.1,0) -- (8.1,1.1\paperheight) -- (-1,1.1\paperheight);
@@ -176,7 +177,7 @@
       };
       \fi
 
-      \node[darkgrey,anchor=south west, inner sep=0, text width = 6cm] at (0.44\paperwidth,0\paperheight){\changefontsizes{10pt}
+      \node[darkgrey,anchor=south east, inner sep=0, text width = 6cm] at (.91\paperwidth,0\paperheight){\changefontsizes{10pt}
 
 
         \if@asFANS
@@ -217,13 +218,13 @@
         \emph{\tiny\hfill \Role} {\tiny{\Email}{@lancaster.ac.uk}}
 
 
-
+        \if@asFANS
         {\color{white}\tiny
 
             \hfill {\bf Formal Methods in Networked Systems}
 
           }
-
+\fi
           \vspace{-.3cm}
         \hfill \date{\today}
         \if@showBib
