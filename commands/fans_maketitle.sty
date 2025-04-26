@@ -1,0 +1,79 @@
+\makeatletter
+\renewcommand{\maketitle}{%
+  
+  \begin{tikzpicture}
+      \useasboundingbox (2.5,2.5) rectangle(\the\paperwidth,\the\paperheight);
+\fill[blackish,opacity=1] (-1,0) -- (1.1\paperwidth,0) -- (1.1\paperwidth,1.1\paperheight) -- (0,1.1\paperheight);
+
+              \node[thick, darkgrey,circle] (a) at (.5\paperwidth,.1\paperheight) {};
+              \node[thick, darkgrey,circle] (b) at (.7\paperwidth,.2\paperheight) {};
+              \node[thick, darkgrey,circle] (c) at (.5\paperwidth,.4\paperheight) {};
+              \node[thick, darkgrey,circle] (d) at (.7\paperwidth,.5\paperheight) {};
+              \draw[very thick, darkgrey] (a) -- (b) -- (d) -- (c) -- (a);
+              \node[thick, darkgrey,circle,] (e) at (.8\paperwidth,.6\paperheight) {};
+              \node[thick, darkgrey,circle] (f) at (.85\paperwidth,.55\paperheight) {};
+              \draw[very thick, darkgrey] (d) -- (e) -- (f) -- (b);
+              \node[thick, darkgrey,circle] (g) at (.875\paperwidth,.8\paperheight) {};
+              \draw[very thick, darkgrey] (e) -- (g) -- (f);
+              \node[thick, darkgrey,circle,] (h) at (.55\paperwidth,.65\paperheight) {};
+              \node[thick, darkgrey,circle,] (i) at (.75\paperwidth,.75\paperheight) {};
+              \draw[very thick, darkgrey] (d) -- (h) -- (i) -- (g);
+              \draw[very thick, darkgrey] (d) -- (i) -- (e);
+              \draw[very thick, darkgrey] (c) -- (h);
+
+              \node[thick, grey,circle] (j) at (.5\paperwidth,.9\paperheight) {};
+              \draw[very thick, darkgrey] (h) -- (j) -- (i);
+
+              \node[thick, grey,circle] (k) at (.75\paperwidth,.9\paperheight) {};
+              \draw[very thick, darkgrey] (j) -- (k) -- (i);
+
+              \node[thick, grey,circle] (l) at (.8\paperwidth,1.1\paperheight) {};
+              \draw[very thick,darkgrey] (k) -- (l) -- (g);
+              \draw[very thick,darkgrey] (k)  -- (g);
+              \node[thick, grey,circle] (m) at (.3\paperwidth,.6\paperheight) {};
+              \draw[very thick, darkgrey] (h) -- (m) -- (c);
+
+              \node[thick, grey,circle, fill] (n) at (.2\paperwidth,.05\paperheight) {};
+              \draw[thick, darkgrey] (c) -- (n) -- (a);
+              \node[thick, grey,circle] (o) at (.55\paperwidth,-.1\paperheight) {};
+              \draw[very thick,darkgrey] (a) -- (o) -- (b) ;
+              \draw[very thick,darkgrey] (o) -- (n) ;
+
+              \node[thick, grey,circle] (p) at (1.1\paperwidth,.45\paperheight) {};
+              \node[thick, grey,circle] (q) at (1.1\paperwidth,.15\paperheight) {};
+              \node[thick, grey,circle] (r) at (1.1\paperwidth,.8\paperheight) {};
+              \draw[very thick,darkgrey] (b) -- (p) -- (f);
+              \draw[very thick,darkgrey] (p) -- (g);
+              \draw[very thick,darkgrey] (b) -- (q);
+              \draw[very thick,darkgrey] (l)--  (r) -- (g);
+              \draw[very thick,darkgrey] (n) -- (m) -- (j);
+              \draw[very thick,darkgrey] (j) -- (l);
+      % \fill[red] (0,0) -- (0,1.1\paperheight) -- (.275\paperwidth,1.1\paperheight) -- (.275\paperwidth,0) ;
+      \node [white,anchor=north west,inner sep=0, text width = 14cm] at (0,1.06\paperheight) {
+        \begin{minipage}{1\textwidth}
+        \textbf{\huge \@title}
+
+
+
+        {\@date}
+
+        {\@author}
+
+        \vspace{.2cm}
+        \end{minipage}
+      };
+      \node [anchor=south west,white,text width = 5.5cm] at (0.1,2) {\small
+
+        \textbf{References, Sources, \& Further Reading}
+
+        \begingroup
+        \renewcommand*{\bibfont}{\tiny}
+        \renewcommand{\chapter}[2]{}%
+        {\small\printbibliography}
+        \endgroup
+
+        \textbf{fans.v1.redrose.report}
+      };
+    \end{tikzpicture}
+}
+\makeatother

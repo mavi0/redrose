@@ -5,7 +5,12 @@
 \RequirePackage{graphicx}
 \usepackage{tikzpagenodes} % Stuck with this now ..
 \usepackage[bottom,top]{background}
+
 \usepackage{atbegshi}% Can't fix this one just bodging it
+
+\DeclareOption{fans}{\@asFANStrue}
+
+
 \AtBeginDocument{\addtocounter{page}{-1}\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
 \SetBgContents{
@@ -36,6 +41,7 @@
 
 \renewcommand{\sfdefault}{bch}
 \renewcommand{\familydefault}{\sfdefault}
+
 
 
 \include{colours.sty}
