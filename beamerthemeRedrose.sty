@@ -13,6 +13,10 @@
 \RequirePackage{graphicx}
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols
 
+\newif\if@asFANS
+\@asFANSfalse
+\DeclareOption{fans}{\@asFANStrue}
+
 \newif\if@showBib
 \@showBibfalse
 \DeclareOption{bib}{\@showBibtrue}
@@ -84,6 +88,24 @@
 % MISC
 
 
+\if@asFANS
+
+\setbeamercolor{itemize item}{fg=white}
+\setbeamercolor{itemize subitem}{fg=white}
+\setbeamercolor{itemize}{fg=white}
+\setbeamercolor{itemize subsubitem}{fg=grey}
+
+\setbeamercolor{block title}{fg=white,bg=red!100}
+\setbeamercolor{block body}{bg=grey!10}
+
+\setbeamercolor{block body example}{bg=grey!10}
+\setbeamercolor{block title example}{bg=green!100,fg=white}
+
+\setbeamercolor{block title alert}{bg=green!100,fg=blackish}
+\setbeamercolor{block body alert}{bg=grey!10}
+
+\else
+
 \setbeamercolor{itemize item}{fg=darkgrey}
 \setbeamercolor{itemize subitem}{fg=darkgrey}
 \setbeamercolor{itemize subsubitem}{fg=grey}
@@ -96,3 +118,5 @@
 
 \setbeamercolor{block title alert}{bg=green!100,fg=white}
 \setbeamercolor{block body alert}{bg=grey!10}
+
+\fi
