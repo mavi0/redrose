@@ -16,49 +16,49 @@
 \SetBgContents{
   \begin{tikzpicture}[scale=.15]
     \useasboundingbox (4,6) rectangle(\the\paperwidth,\the\paperheight);
-    \node[, line width = 0.01cm, lightgray,circle] (a) at (.5\paperwidth,.1\paperheight) {};
-    \node[, line width = 0.01cm, lightgray,circle] (b) at (.7\paperwidth,.2\paperheight) {};
-    \node[, line width = 0.01cm, lightgray,circle] (c) at (.5\paperwidth,.4\paperheight) {};
-    \node[, line width = 0.01cm, lightgray,circle] (d) at (.7\paperwidth,.5\paperheight) {};
-    \draw[, line width = 0.01cm, lightgray] (a) -- (b) -- (d) -- (c) -- (a);
-    \node[thick, line width = 0.01cm, lightgray,circle,] (e) at (.8\paperwidth,.6\paperheight) {};
-    \node[thick, line width = 0.01cm, lightgray,circle] (f) at (.85\paperwidth,.55\paperheight) {};
-    \draw[, line width = 0.01cm, lightgray] (d) -- (e) -- (f) -- (b);
-    \node[thick, line width = 0.01cm, lightgray,circle] (g) at (.875\paperwidth,.8\paperheight) {};
-    \draw[ line width = 0.01cm, lightgray] (e) -- (g) -- (f);
-    \node[thick, line width = 0.01cm, lightgray,circle,] (h) at (.55\paperwidth,.65\paperheight) {};
-    \node[thick, line width = 0.01cm, lightgray,circle,] (i) at (.75\paperwidth,.75\paperheight) {};
-    \draw[ line width = 0.01cm, lightgray] (d) -- (h) -- (i) -- (g);
-    \draw[ line width = 0.01cm, lightgray] (d) -- (i) -- (e);
-    \draw[ line width = 0.01cm, lightgray] (c) -- (h);
+    \node[, line width = 0.005cm, lightgray,circle] (a) at (.5\paperwidth,.1\paperheight) {};
+    \node[, line width = 0.005cm, lightgray,circle] (b) at (.7\paperwidth,.2\paperheight) {};
+    \node[, line width = 0.005cm, lightgray,circle] (c) at (.5\paperwidth,.4\paperheight) {};
+    \node[, line width = 0.005cm, lightgray,circle] (d) at (.7\paperwidth,.5\paperheight) {};
+    \draw[, line width = 0.005cm, lightgray] (a) -- (b) -- (d) -- (c) -- (a);
+    \node[thick, line width = 0.005cm, lightgray,circle,] (e) at (.8\paperwidth,.6\paperheight) {};
+    \node[thick, line width = 0.005cm, lightgray,circle] (f) at (.85\paperwidth,.55\paperheight) {};
+    \draw[, line width = 0.005cm, lightgray] (d) -- (e) -- (f) -- (b);
+    \node[thick, line width = 0.005cm, lightgray,circle] (g) at (.875\paperwidth,.8\paperheight) {};
+    \draw[ line width = 0.005cm, lightgray] (e) -- (g) -- (f);
+    \node[thick, line width = 0.005cm, lightgray,circle,] (h) at (.55\paperwidth,.65\paperheight) {};
+    \node[thick, line width = 0.005cm, lightgray,circle,] (i) at (.75\paperwidth,.75\paperheight) {};
+    \draw[ line width = 0.005cm, lightgray] (d) -- (h) -- (i) -- (g);
+    \draw[ line width = 0.005cm, lightgray] (d) -- (i) -- (e);
+    \draw[ line width = 0.005cm, lightgray] (c) -- (h);
 
     \node[thick, lightgray,circle] (j) at (.5\paperwidth,.9\paperheight) {};
-    \draw[ line width = 0.01cm, lightgray] (h) -- (j) -- (i);
+    \draw[ line width = 0.005cm, lightgray] (h) -- (j) -- (i);
 
     \node[thick, lightgray,circle] (k) at (.75\paperwidth,.9\paperheight) {};
-    \draw[ line width = 0.01cm, lightgray] (j) -- (k) -- (i);
+    \draw[ line width = 0.005cm, lightgray] (j) -- (k) -- (i);
 
     \node[thick, lightgray,circle] (l) at (.8\paperwidth,1.1\paperheight) {};
-    \draw[line width = 0.01cm, lightgray] (k) -- (l) -- (g);
-    \draw[line width = 0.01cm, lightgray] (k)  -- (g);
+    \draw[line width = 0.005cm, lightgray] (k) -- (l) -- (g);
+    \draw[line width = 0.005cm, lightgray] (k)  -- (g);
     \node[thick, lightgray,circle] (m) at (.3\paperwidth,.6\paperheight) {};
-    \draw[ line width = 0.01cm, lightgray] (h) -- (m) -- (c);
+    \draw[ line width = 0.005cm, lightgray] (h) -- (m) -- (c);
 
     \node[thick, lightgray,circle, fill] (n) at (.2\paperwidth,.05\paperheight) {};
-    \draw[ line width = 0.01cm, lightgray] (c) -- (n) -- (a);
+    \draw[ line width = 0.005cm, lightgray] (c) -- (n) -- (a);
     \node[thick, lightgray,circle] (o) at (.55\paperwidth,-.1\paperheight) {};
-    \draw[line width = 0.01cm, lightgray] (a) -- (o) -- (b) ;
-    \draw[line width = 0.01cm, lightgray] (o) -- (n) ;
+    \draw[line width = 0.005cm, lightgray] (a) -- (o) -- (b) ;
+    \draw[line width = 0.005cm, lightgray] (o) -- (n) ;
 
     \node[thick, lightgray,circle] (p) at (1.1\paperwidth,.45\paperheight) {};
     \node[thick, lightgray,circle] (q) at (1.1\paperwidth,.15\paperheight) {};
     \node[thick, lightgray,circle] (r) at (1.1\paperwidth,.8\paperheight) {};
-    \draw[line width = 0.01cm, lightgray] (b) -- (p) -- (f);
-    \draw[line width = 0.01cm, lightgray] (p) -- (g);
-    \draw[line width = 0.01cm, lightgray] (b) -- (q);
-    \draw[line width = 0.01cm, lightgray] (l)--  (r) -- (g);
-    \draw[line width = 0.01cm, lightgray] (n) -- (m) -- (j);
-    \draw[line width = 0.01cm, lightgray] (j) -- (l);
+    \draw[line width = 0.005cm, lightgray] (b) -- (p) -- (f);
+    \draw[line width = 0.005cm, lightgray] (p) -- (g);
+    \draw[line width = 0.005cm, lightgray] (b) -- (q);
+    \draw[line width = 0.005cm, lightgray] (l)--  (r) -- (g);
+    \draw[line width = 0.005cm, lightgray] (n) -- (m) -- (j);
+    \draw[line width = 0.005cm, lightgray] (j) -- (l);
 
     \fill[white,opacity=1] (0,-\paperheight) -- (0,-.5cm) -- (\paperwidth,-.5cm) --  (\paperwidth,-\paperheight);
   \end{tikzpicture}
