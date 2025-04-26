@@ -24,7 +24,7 @@
     \begin{tikzpicture}
 
       \useasboundingbox (-1,0) rectangle(\the\paperwidth,\the\paperheight);
-      \node[opacity=.05,anchor=south east] at (0.45\paperwidth,.085\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
+
       \if@asFANS
               \fill[blackish,opacity=1] (-1,0) -- (1.1\paperwidth,0) -- (1.1\paperwidth,1.1\paperheight) -- (-1,1.1\paperheight);
 
@@ -71,6 +71,7 @@
               \draw[thick,darkgrey] (l)--  (r) -- (g);
               \draw[thick,darkgrey] (n) -- (m) -- (j);
             \else
+              \node[opacity=.05,anchor=south east] at (0.45\paperwidth,.085\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
         \fill[darkgrey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.8775\paperheight) -- (-1,.8775\paperheight);
         \fill[grey,opacity=1,anchor=north] (-1,\paperheight) -- (1\paperwidth,\paperheight) -- (1\paperwidth,.906\paperheight) -- (-1,.906\paperheight);
         \fi
@@ -86,7 +87,7 @@
 
     \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
     %\node[white, anchor=north west] at (.647\paperwidth,.0715\textwidth){\includegraphics[width=0.3\textwidth]{img/scc_logo.png}};
-    \node[opacity=.05,anchor=south west] at (0.45\paperwidth,.085\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
+
     \ifnum\thepage=1
             \node[grey,anchor=south west,inner sep=0] at (6.1,1.3) {\centering
 
@@ -136,6 +137,7 @@
               \draw[thick,grey] (b) -- (q);
               \draw[thick,grey] (l)--  (r) -- (g);
             \else
+                  \node[opacity=.05,anchor=south west] at (0.45\paperwidth,.085\paperheight) {\includegraphics[height=0.8\paperheight]{img/coat_of_arms_grey.png}};
               \fill[darkgrey,opacity=1] (-1,0) -- (4.1,0) -- (8.1,1.1\paperheight) -- (-1,1.1\paperheight);
               \fill[grey,opacity=1] (-1,0) -- (3.8,0) -- (7.8,1.1\paperheight) -- (-1,1.1\paperheight);
             \fi
