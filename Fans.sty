@@ -8,6 +8,41 @@
 \RequirePackage{graphicx}
 \usepackage{tikzpagenodes} % Stuck with this now ..
 \usepackage[bottom,top]{background}
+\usepackage{amsthm}
+
+\newtheoremstyle{s1} % name
+    {\topsep}                    % Space above
+    {\topsep}                    % Space below
+    {\color{black}\itshape}                   % Body font
+    {}                           % Indent amount
+    {\bf\color{red}\scshape}                   % Theorem head font
+    {.}                          % Punctuation after theorem head
+    {.5em}                       % Space after theorem head
+    {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{s1}
+\newtheorem{theorem}{Theorem}[section]
+\newtheoremstyle{s2} % name
+    {\topsep}                    % Space above
+    {\topsep}                    % Space below
+    {\color{black}\itshape}                   % Body font
+    {}                           % Indent amount
+    {\bf\color{purple}\scshape}                   % Theorem head font
+    {.}                          % Punctuation after theorem head
+    {.5em}                       % Space after theorem head
+    {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{s2}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheoremstyle{s3} % name
+    {\topsep}                    % Space above
+    {\topsep}                    % Space below
+    {\color{black}\itshape}                   % Body font
+    {}                           % Indent amount
+    {\bf\color{green}\scshape}                   % Theorem head font
+    {.}                          % Punctuation after theorem head
+    {.5em}                       % Space after theorem head
+    {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{s3}
+\newtheorem{lemma}[theorem]{Lemma}
 
 \usepackage{atbegshi}% Can't fix this one just bodging it
 
