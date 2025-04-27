@@ -54,7 +54,26 @@
     {.5em}                       % Space after theorem head
     {}  % Theorem head spec (can be left empty, meaning ‘normal’)
     \theoremstyle{s3}
-\newtheorem{example}[theorem]{Example}
+    \newtheorem{example}[theorem]{Example}
+    \newtheoremstyle{s4} % name
+    {\topsep}                    % Space above
+    {\topsep}                    % Space below
+    {\color{darkgrey}\itshape}                   % Body font
+    {}                           % Indent amount
+    {\bf\color{blue}\scshape }                   % Theorem head font
+    {.
+
+      \\
+      \begin{tikzpicture}
+        \fill[anchor=north,blue,opacity=1] (0,0) -- (.8\paperwidth,0) -- (.8\paperwidth, .1cm) -- (0,.1cm);
+      \end{tikzpicture}
+
+      \\
+    }                          % Punctuation after theorem head
+    {.5em}                       % Space after theorem head
+    {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+    \theoremstyle{s4}
+    \newtheorem{prop}[theorem]{Proposition}
 
 
 \DeclareSymbolFontAlphabet{\mathrm}    {operators}
