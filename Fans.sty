@@ -9,7 +9,7 @@
 \usepackage{tikzpagenodes} % Stuck with this now ..
 \usepackage[bottom,top]{background}
 \usepackage{amsthm}
-
+\include{colours.sty}
 \newtheoremstyle{s1} % name
     {\topsep}                    % Space above
     {\topsep}                    % Space below
@@ -32,20 +32,31 @@
     {.}                          % Punctuation after theorem head
     {.5em}                       % Space after theorem head
     {}  % Theorem head spec (can be left empty, meaning ‘normal’)
-\theoremstyle{s2}
+    \theoremstyle{s2}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheoremstyle{s3} % name
     {\topsep}                    % Space above
     {\topsep}                    % Space below
-    {\color{black}\itshape}                   % Body font
+    {\color{darkgrey}\itshape}                   % Body font
     {}                           % Indent amount
-    {\bf\color{red}\scshape}                   % Theorem head font
-    {.}                          % Punctuation after theorem head
+    {\bf\color{green}\scshape }                   % Theorem head font
+    {.
+
+      \\
+      \begin{tikzpicture}
+        \fill[anchor=north,green,opacity=1] (0,0) -- (.8\paperwidth,0) -- (.8\paperwidth, .1cm) -- (0,.1cm);
+      \end{tikzpicture}
+
+      \\
+    }                          % Punctuation after theorem head
     {.5em}                       % Space after theorem head
     {}  % Theorem head spec (can be left empty, meaning ‘normal’)
-\theoremstyle{s3}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{remark}[theorem]{Remark}
+    \theoremstyle{s3}
+\newtheorem{example}[theorem]{Example}
+
+
 \DeclareSymbolFontAlphabet{\mathrm}    {operators}
 \DeclareSymbolFontAlphabet{\mathnormal}{letters}
 \DeclareSymbolFontAlphabet{\mathcal}   {symbols}
@@ -128,7 +139,7 @@
 
 
 
-\include{colours.sty}
+
 
 \include{commands/fans_maketitle.sty}
 \include{commands/tableofcontents.sty}
