@@ -1,6 +1,6 @@
 #+title: v1.redrose
 
- [[./img/coat_of_arms.png]]
+ [[./img/shield.png]]
 
  - "the crest! It looks so cool" - Tom
 
